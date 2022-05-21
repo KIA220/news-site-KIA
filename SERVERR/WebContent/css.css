@@ -1,0 +1,482 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: TitaniumWeb;
+            src: local("TitaniumWeb"), url(TitilliumWeb-ExtraLight.ttf);
+        }
+
+        * {
+            font-family: TitaniumWeb;
+        }
+        
+        div {
+            width: 100%;
+            height: 100px;
+            background-color: transparent;
+            z-index: 1;
+        }
+
+        #header {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(233, 233, 233);
+            border-bottom: solid;
+        }
+
+        #body {
+            width: 100%;
+            height: 700px;
+            background-color: rgb(235, 235, 235);
+            border-bottom: solid;
+        }
+        #bodyContent {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(235, 235, 235);
+            border-bottom: solid;
+        }
+
+        #footer {
+            width: 100%;
+            height: 90px;
+            background-color: rgb(237, 237, 255);
+        }
+
+        #reg_form {
+            width: 100%;
+            height: 65vh;
+            background-color: rgba(251, 184, 184, 0.00);
+            z-index: 0;
+            position: absolute;
+            margin-top: 155px;
+            display: none;
+        }
+        #signin_form {
+            width: 100%;
+            height: 65vh;
+            background-color: rgba(251, 184, 184, 0.00);
+            z-index: 0;
+            position: absolute;
+            margin-top: 155px;
+            display: none;
+        }
+
+        #btn_reg {
+            float: right;
+            background-color: #3D94F6;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 8px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+		#btn_signin {
+            float: right;
+            background-color: #3D94F6;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 8px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        #btn_signout {
+            float: right;
+            background-color: #3D94F6;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 8px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        #btn_tomain {
+            float: right;
+            background-color: #3D94F6;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 8px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        #btn_namemail {
+            float: right;
+            background-color: #00000000;
+            border-radius: 0px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #000000;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 8px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: defaults;
+            text-align: center;
+        }
+        #btn_reply {
+        	float: right;
+            background-color: #3D94F6;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 8px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        #btn_addnews {
+        	float: right;
+            background-color: #3D94F6;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 8px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+         #btn_reg:hover {
+            border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        #btn_tomain:hover {
+            border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        #btn_signout:hover {
+            border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        #btn_signin:hover {
+            border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        #btn_reply:hover {
+            border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        #btn_addnews:hover {
+            border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        #btn_reg_close {
+            float: right;
+            background-color: #3D94F6;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 5px 15px 5px 15px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        #btn_signin_close {
+            float: right;
+            background-color: #3D94F6;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 5px 15px 5px 15px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+
+        #btn_reg_close:hover {
+            border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        #btn_signin_close:hover {
+            border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        #btn_reg_ok {
+            float: right;
+            background-color: #3D94F6;
+            width: 60px;
+            height: 40px;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        #btn_signin_ok {
+            float: right;
+            background-color: #3D94F6;
+            width: 60px;
+            height: 40px;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            margin: 10px 10px 10px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        #btn_reg_ok:hover {
+            border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+        #btn_signin_ok:hover {
+            border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+		input[type=reset]{
+			width: 80px;
+			float: left;
+            background-color: #3D94F6;
+            border-radius: 20px;
+            border: solid #337FED 0;
+            font-family: TitaniumWeb;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 100;
+            text-decoration: none;
+            margin: 10px 10px 10px 0px;
+            cursor: pointer;
+            text-align: center;
+		}
+		input[type=reset]:hover{
+		border: solid #337FED 0;
+            background: #1E62D0;
+            text-decoration: none;
+            border-radius: 20px;
+		}
+        #reg_cont {
+            width: 80%;
+            margin: 0 auto;
+            height: 100%;
+            background-color: rgb(228, 228, 228);
+        }
+        #signin_cont {
+            width: 80%;
+            margin: 0 auto;
+            height: 100%;
+            background-color: rgb(228, 228, 228);
+        }
+		#signin_cont_in {
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            background-color: rgb(228, 228, 228);
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-gap: 0vw;
+            justify-items: center;
+        }
+        #reg_cont_in {
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            background-color: rgb(228, 228, 228);
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-gap: 0vw;
+            justify-items: center;
+        }
+
+        input {
+            height: 50px;
+            width: 350px;
+        }
+
+        form {
+            height: auto;
+            width: 350px;
+        }
+        
+        input[name=StudentCheck]{
+        	height: 20px;
+            width: 20px;
+            vertical-align: middle;
+        }
+        input[name=Exch]{
+        	height: 20px;
+            width: 20px;
+            vertical-align: middle;
+        }
+        input[name=Single]{
+        	height: 20px;
+            width: 20px;
+            vertical-align: middle;
+        }
+        input[name=StudentCheckIT]{
+        	height: 20px;
+            width: 20px;
+            vertical-align: middle;
+        }
+        input[name=StudentCheckWork]{
+        	height: 20px;
+            width: 20px;
+            vertical-align: middle;
+        }
+        #formtouserroom{width: 100%;}
+        #formtomain{width: 100%;}
+        #formsignout{width: 100%;}
+        #ContentLogged{
+        width: 100%;
+        height: 100%;
+		display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	align-content: flex-start;
+    	justify-content: space-around;
+    	align-items: center;
+        }
+        #ContentBlock{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-around;
+        align-items: center;
+        width: 450px;
+        height: 250px;
+        background-color: rgb(149, 170, 209);
+        margin: 10px 10px 10px 10px;
+        }
+        #ContentPictureBlock{
+        width: 92%;
+        height: 50%;
+        background-color: rgb(102, 115, 139);
+        margin: 10px 10px 10px 10px;
+        
+        }
+        #ContentTextBlock{
+        width: 92%;
+        height: 35%;
+        background-color: rgb(179, 179, 179);
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 5px;
+        text-align: justify;
+        }
+        #ContentPictureBlock img{
+        width: 100%;
+    	height: 100%;
+    	object-fit: cover;
+        }
+        #divreply{
+        height: auto;
+        width: 600px;
+        background-color: rgb(211, 211, 211);
+        margin: 20px 20px 20px 20px;
+        border-radius: 60px;
+        }
+        #divaddnews{
+        height: auto;
+        width: 600px;
+        background-color: rgb(211, 211, 211);
+        margin: 20px 20px 20px 20px;
+        border-radius: 60px;
+        }
+        #formreply{
+        height: 300px;
+        width: 600px;
+        }
+        #formaddnews{
+        height: 300px;
+        width: 600px;
+        }
+        #labelreply{
+        display: block;
+    	text-align: center;
+        }
+        #labeladdnews{
+        display: block;
+    	text-align: center;
+        }
+        #textareareply{
+        resize: none;
+        display: block;
+		margin: 20px auto 20px auto;
+        font-size: 18px;
+        
+        }
+        #textareaaddnews{
+        resize: none;
+        display: block;
+    	margin: 20px auto 20px auto;
+        font-size: 18px;
+        }
+        #passaddnews{
+        display: block;
+    	margin: 20px auto 20px auto;
+        }
